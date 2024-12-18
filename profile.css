@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #333;
     color: #fff;
@@ -12,28 +13,31 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-nav {
-    flex-grow: 1;
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 nav ul li {
     margin-right: 1rem;
 }
+
 nav ul li:last-child {
     margin-right: 0;
 }
-nav ul li a {
+n
+av ul li a {
     color: #fff;
     text-decoration: none;
 }
+
 .login-container {
-    margin-left: 1rem;
+    /* Add styles for login container if needed */
 }
+
 .login-btn {
     background-color: #4CAF50;
     color: white;
@@ -41,26 +45,33 @@ nav ul li a {
     text-decoration: none;
     border-radius: 4px;
 }
+
 main {
     padding: 2rem;
 }
+
 h1, h2 {
     color: #333;
 }
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+
+.profile-info, .order-history {
+    margin-bottom: 2rem;
 }
-.product-card {
+
+.profile-info p {
+    margin-bottom: 0.5rem;
+}
+
+.order {
     border: 1px solid #ddd;
     padding: 1rem;
-    text-align: center;
+    margin-bottom: 1rem;
 }
-.product-card img {
-    max-width: 100%;
-    height: auto;
+
+.order h3 {
+    margin-top: 0;
 }
+
 .btn {
     display: inline-block;
     background-color: #333;
@@ -69,6 +80,7 @@ h1, h2 {
     text-decoration: none;
     margin-top: 0.5rem;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -78,19 +90,18 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
     }
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav ul li {
-        margin: 0.5rem;
-    }
-    .login-container {
         margin-top: 1rem;
-        margin-left: 0;
+    }
+    .login-btn {
+        margin-top: 1rem;
+    }
+    .profile-info, .order-history {
+        font-size: 0.9rem;
     }
 }
